@@ -64,9 +64,7 @@ nav {
     width: 100%;
     color: rgb(255,255, 255);
     text-align: center;
-    letter-spacing: normal; 
-    padding: 40px;
-    margin-right: 30px;
+    
 }
 
 .resume-details {
@@ -89,13 +87,101 @@ nav {
     text-align: left;
     padding: 30px;
     margin-bottom: 20px; 
-    /* height: 60px; */
+    font-size: 20px;
+    color:white;
 }
 
  .experience{
     padding-right: 40px;
+    margin: auto;
 }
 
+.sub-tittle {
+    padding-bottom: 40px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.header {
+    padding-top: 40px;
+}
+
+.my-self{
+    height: 70vh;
+    width: 100vw;
+    background-color: rgba(34,34,34) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.about-me{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    row-gap: 50px;
+    font-size: 20px;
+    color: #7A7A6D ;
+   
+}
+
+.text-line{
+    font-size: 16px;
+}
+
+.heading{
+    color: white;
+}
+
+.button{
+    padding: 10px;
+    border-radius: 20px;
+    width: 30%;
+    background-color: #B2C251;
+    color: white;
+    border-style: none;
+}
+
+.press{
+    padding: 10px;
+    border-radius:20px;
+    width:50%;
+    background-color: #5A6268;
+    color: white;
+    border-style: none;
+}
+
+.text-color{
+    color: #82A39C ;
+}
+
+.footer{
+    width: 100vw;
+    height: 70vh;
+    background-color: aqua;
+}
+
+.footer-header{
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40vw;
+    /*  */
+}
 
 
 
