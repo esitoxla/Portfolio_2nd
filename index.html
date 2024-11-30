@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO_2nd</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -17,8 +20,8 @@
                 <a href="#home" class="text">HOME</a>
                 <a href="#about" class="text">ABOUT</a>
                 <a href="#resume" class="text">RESUME</a>
-                <a href="#Services" class="text">SERVICES</a>
-                <a href="#Projects" class="text">PROJECTS</a>
+                <a href="#services" class="text">SERVICES</a>
+                <a href="#projects" class="text">PROJECTS</a>
                 <a href="#contact" class="text">CONTACT</a>
             </div>
         </nav>
@@ -47,7 +50,13 @@
                     </p>
         
                     <div>
-                        <button class="button">HIRE ME</button>
+                        <button class="button">
+                            <a
+                                href="mailto:toxlairene@gmail.com?subject=Job Opportunity&body=Hi, I came across your portfolio and would like to discuss a job opportunity.">
+                                Hire Me
+                            </a>
+                        </button>
+
                         <a href="./assets/ireneToxla.resume - Irene Toxla.docx.pdf" download>
                             <button class="press">DOWNLOAD CV</button> </a>
                     </div>
@@ -68,7 +77,7 @@
                         <h4 class="sub-tittle">Education</h4>
 
                         <div class="education">
-                            <h5><i class="fa-regular fa-calendar-check"></i> September 2024 - Present</h5>
+                            <h5><i class="fa-regular fa-calendar-check"></i> September 2024 - November 2024</h5>
                             <p class="text-color">Web Development Program</p>
                             <p>MEST Training Pragram</p>
                         </div>
@@ -113,54 +122,75 @@
                 </div>
             </div>
         </section>
+
+        <section id="services" class="services-section">
+            <h2>Featured Services</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <i class="fas fa-server icon-blue" ></i>
+                    <h3>API Development</h3>
+                    <p>Design and build scalable, secure RESTful APIs for web applications.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Database Management</h3>
+                    <p>Create and manage efficient database schemas and optimize database performance.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Server-Side Logic</h3>
+                    <p>Develop robust server-side logic to handle data processing and business rules.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>User Authentication</h3>
+                    <p>Implement secure login systems, session management, and role-based access controls.</p>
+                </div>
+            </div>
+        </section>
        
         <section id="contact">
             <footer class="footer">
-                <h1 class="footer-header">Get In Touch</h1>
+                <h1 class="footer-header"></h1>
                 <div class="footer-body">
                     <div>
                         <h3>Get In Touch</h3>
-                        <form>
+
+                        <form action="mailto:toxlairene@gmail.com" method="POST" enctype="text/plain">
                             <input type="text" placeholder="Your Name" class="form-name">
                             <input type="email" placeholder="Your Email" class="form-name">
                             <input type="text" placeholder="Your Phone" class="form-name">
                             <input type="text" placeholder="Write a Message" class="form-message">
+
+                            <button class="button-message">SEND MESSAGE</button>
                         </form>
-                        <div>
-                            <a href="mailto:toxlairene@gmail.com"> 
-                                <button class="button-message">SEND MESSAGE</button> 
-                            </a>
-                           
-                        </div>
+                        
                     </div>
-                    <div id ="contact">
-                        <h3>My Contact Details</h3>
-                        <div>
-                            <div>
-                                <p class="contact-header">EMAIL</p>
-                                <p>toxlairene@gmail.com</p>
-                            </div>
-                            <div>
-                                <p class="contact-header">PHONE</p>
-                                <p>+233 206678495</p>
-                            </div>
-                        </div>
+                    <div class ="contact-me">
+                        <h2>Contact Me</h2>
+                        <p>
+                            Feel free to reach out via email or social media. I'm always open to discussing new projects, creative ideas, or
+                            opportunities to be part of your visions.
+                        </p>
                     </div>
                 </div>
-                <div class="socials">
-                    <div class="Copy-right">
-                        Copyright © 2024 All rights reserved | This template is made by Colorlib
-                    </div>
-                    <div class="social-brand">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-square-github"></i>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                    </div>
-                </div>
+               
             </footer>
+
+            <div class="socials">
+                <div class="Copy-right">
+                    Copyright © 2024 All rights reserved | This template is made by Colorlib
+                </div>
+                <div class="social-brand">
+                    <i class="fa-brands fa-square-github"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
         </section>
     </div>
 </body>
