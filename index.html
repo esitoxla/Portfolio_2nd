@@ -10,21 +10,26 @@
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+    <script src="./manu-toggle.js" defer></script>
 </head>
 
 <body>
     <div id="" class="hero">
-        <nav>
-            <button class="logo">IT</button>
-            <div class="nav-items">
-                <a href="#home" class="text">HOME</a>
-                <a href="#about" class="text">ABOUT</a>
-                <a href="#resume" class="text">RESUME</a>
-                <a href="#services" class="text">SERVICES</a>
-                <a href="#projects" class="text">PROJECTS</a>
-                <a href="#contact" class="text">CONTACT</a>
-            </div>
-        </nav>
+        
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <nav>
+                <button class="logo">IT</button>
+                <ul class="nav-items">
+                    <li><a href="#home" class="text">HOME</a></li>
+                    <li><a href="#about" class="text">ABOUT</a></li>
+                    <li><a href="#resume" class="text">RESUME</a></li>
+                    <li><a href="#services" class="text">SERVICES</a></li>
+                    <!-- <li><a href="#projects" class="text">PROJECTS</a></li> -->
+                    <li><a href="#contact" class="text">CONTACT</a></li>
+                </ul>
+            </nav>
         <section id="home">
             <div class="hero-bar">
                 <p class="hello">Hello, I'm</p>
@@ -74,7 +79,7 @@
                 <div class="resume-details">
 
                     <div class="education-details">
-                        <h4 class="sub-tittle">Education</h4>
+                        <h4 class="sub-title">Education</h4>
 
                         <div class="education">
                             <h5><i class="fa-regular fa-calendar-check"></i> September 2024 - November 2024</h5>
@@ -97,8 +102,8 @@
                     </div>
 
 
-                    <div class="experience">
-                        <h4 class="sub-tittle">Experience</h4>
+                    <div class="education-details">
+                        <h4 class="sub-title">Experience</h4>
 
                         <div class="education">
                             <h5><i class="fa-regular fa-calendar-check"></i> November 2022 - October 2023</h5>
@@ -156,7 +161,7 @@
             <footer class="footer">
                 <h1 class="footer-header"></h1>
                 <div class="footer-body">
-                    <div>
+                    <div class="footer-form">
                         <h3>Get In Touch</h3>
 
                         <form action="mailto:toxlairene@gmail.com" method="POST" enctype="text/plain">
@@ -170,7 +175,7 @@
                         
                     </div>
                     <div class ="contact-me">
-                        <h2>Contact Me</h2>
+                        <!-- <h2>Contact Me</h2> -->
                         <p>
                             Feel free to reach out via email or social media. I'm always open to discussing new projects, creative ideas, or
                             opportunities to be part of your visions.
@@ -185,10 +190,23 @@
                     Copyright © 2024 All rights reserved | This template is made by Colorlib
                 </div>
                 <div class="social-brand">
-                    <i class="fa-brands fa-square-github"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+
+                    <a href="https://github.com/esitoxla" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-square-github"></i>
+                    </a>
+                   
+                    <a href="https://wa.me/0206678495" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                   
+                    <a href="https://www.instagram.com/esi_toxla" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                   
+                    <a href="https://www.linkedin.com/in/irene-toxla-40a634248" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                   
                 </div>
             </div>
         </section>
