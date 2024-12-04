@@ -10,16 +10,19 @@
   color: white;
 }
 
-nav {
+.navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
   /* background-color: aqua; */
   height: 10%;
   width: 100vw;
-  background-color: white;
+  background-color:white ;
 }
 
 .nav-items {
@@ -39,36 +42,59 @@ nav {
   text-decoration: none;
 }
 
+     /* landing page */
 .hero-bar {
-  width: 100vw;
-  height: 100vh;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.3); */
   row-gap: 30px;
 }
 
-.hero {
-  height: 100%;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust opacity for darkness */
+  z-index: 1; /* Ensures it sits under the content */
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
   background-image: url(./assets/backgroundL.jpg);
-  background-size: contain;
-  /* background-position: center; */
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
 }
 
 .hello {
   font-family: sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  color: white;
 }
 
 .name {
   font-weight: bolder;
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: sans-serif;
+  color: white;
+}
+
+.role{
+  font-family: sans-serif;
+  color: white;
+  font-size: 1.5rem;
 }
 
 /* section 3 */
@@ -375,8 +401,23 @@ form {
   }
 }
 
-/* responsiveness for nav, hero, landing */
+/* responsiveness for nav */
 
+
+  /* Responsive adjustments for landing page*/
+@media screen and (max-width: 768px) {
+  .hello {
+    font-size: 2rem;
+  }
+
+  .name {
+    font-size: 3rem;
+  }
+
+  .role{
+    font-size: 1rem;
+  }
+}
 /* responsiveness for about me section */
 /* Responsive for tablets (768px and below) for about section */
 @media screen and (max-width: 768px) {
