@@ -10,207 +10,210 @@
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
-    <script src="./manu-toggle.js" defer></script>
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
-         <nav class="navbar">
-                <div class="logo">IT</div>
-                <button class="menu-toggle" aria-label="Toggle navigation">
-                    ☰
-                </button>
-                <ul class="nav-items">
-                    <li><a href="#home" class="text">HOME</a></li>
-                    <li><a href="#about" class="text">ABOUT</a></li>
-                    <li><a href="#resume" class="text">RESUME</a></li>
-                    <li><a href="#services" class="text">SERVICES</a></li>
-                    <!-- <li><a href="#projects" class="text">PROJECTS</a></li> -->
-                    <li><a href="#contact" class="text">CONTACT</a></li>
-                </ul>
-            </nav>
+    <nav class="navbar">
+        <button class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        </button>
+        <div class="logo">IT</div>
+        <ul class="nav-items">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#resume">RESUME</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <!-- <li><a href="#projects">PROJECTS</a></li> -->
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
 
-           
-        <section id="home" class="hero">
-            <div class="overlay"></div>
-            <div class="hero-bar">
-                <p class="hello">Hello, I'm</p>
-                <h1 class="name">IRENE TOXLA</h1>
-                <p class="role">A JUNIOR BACKEND DEVELOPER</p>
+
+    <section id="home" class="hero">
+        <div class="overlay"></div>
+        <div class="hero-bar">
+            <p class="hello">Hello, I'm</p>
+            <h1 class="name">IRENE TOXLA</h1>
+            <p class="role">A JUNIOR BACKEND DEVELOPER</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="my-self">
+
+            <div class="image">
+                <!-- <img src="./assets/mypic.jpg" alt=""> -->
             </div>
-        </section>
 
-        <section id="about">
-            <div class="my-self">
-                
-                <div class="image">
-                    <!-- <img src="./assets/mypic.jpg" alt=""> -->
+            <div class="about-me">
+                <h1 class="heading">About Me</h1>
+                <p>Junior backend developer with a Biology degree and a few months of experience. Strong analytical
+                    skills and a passion
+                    for developing efficient applications.</p>
+                <p class="text-line">Proficient in javascript/express, eager to contribute to innovative projects in
+                    a collaborative environment.
+                </p>
+
+                <div>
+                    <button class="button">
+                        <a
+                            href="mailto:toxlairene@gmail.com?subject=Job Opportunity&body=Hi, I came across your portfolio and would like to discuss a job opportunity.">
+                            Hire Me
+                        </a>
+                    </button>
+
+                    <a href="./assets/ireneToxla.resume - Irene Toxla.docx.pdf" download>
+                        <button class="press">DOWNLOAD CV</button> </a>
                 </div>
-        
-                <div class="about-me">
-                    <h1 class="heading">About Me</h1>
-                    <p>Junior backend developer with a Biology degree and a few months of experience. Strong analytical
-                        skills and a passion
-                        for developing efficient applications.</p>
-                    <p class="text-line">Proficient in javascript/express, eager to contribute to innovative projects in
-                        a collaborative environment.
+            </div>
+
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="resume">
+
+            <h1 class="header">My Resume</h1>
+
+
+            <div class="resume-details">
+
+                <div class="education-details">
+                    <h4 class="sub-title">Education</h4>
+
+                    <div class="education">
+                        <h5><i class="fa-regular fa-calendar-check"></i> September 2024 - November 2024</h5>
+                        <p class="text-color">Web Development Program</p>
+                        <p>MEST Training Pragram</p>
+                    </div>
+
+                    <div class="education">
+                        <h5><i class="fa-regular fa-calendar-check"></i> September 2018 - August 2022</h5>
+                        <p class="text-color">University Of Ghana</p>
+                        <p>Bsc.Biology</p>
+                    </div>
+
+                    <div class="education">
+                        <h5><i class="fa-regular fa-calendar-check"></i> September 2016 - July 2018</h5>
+                        <p class="text-color">St rose's Senior High School</p>
+                        <p>General Science</p>
+                    </div>
+
+                </div>
+
+
+                <div class="education-details">
+                    <h4 class="sub-title">Experience</h4>
+
+                    <div class="education">
+                        <h5><i class="fa-regular fa-calendar-check"></i> November 2022 - October 2023</h5>
+                        <p class="text-color">CSIR Water Research Institute</p>
+                        <p>National Service</p>
+                    </div>
+
+                    <div class="education">
+                        <h5><i class="fa-regular fa-calendar-check"></i> October 2022 - November 2022</h5>
+                        <p class="text-color">Noguchi Memorial Institute for Medical Research</p>
+                        <p>Internship</p>
+                    </div>
+
+
+                    <div class="education">
+                        <h5><i class="fa-regular fa-calendar-check"></i> October 2022</h5>
+                        <p class="text-color">Solidage Africa Foundation, Health Screening</p>
+                        <p>volunteer work</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <h2>Featured Services</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <i class="fas fa-server icon-blue"></i>
+                <h3>API Development</h3>
+                <p>Design and build scalable, secure RESTful APIs for web applications.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-database"></i>
+                <h3>Database Management</h3>
+                <p>Create and manage efficient database schemas and optimize database performance.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-cogs"></i>
+                <h3>Server-Side Logic</h3>
+                <p>Develop robust server-side logic to handle data processing and business rules.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-lock"></i>
+                <h3>User Authentication</h3>
+                <p>Implement secure login systems, session management, and role-based access controls.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <footer class="footer">
+            <h1 class="footer-header"></h1>
+            <div class="footer-body">
+                <div class="footer-form">
+                    <h3>Get In Touch</h3>
+
+                    <form action="mailto:toxlairene@gmail.com" method="POST" enctype="text/plain">
+                        <input type="text" placeholder="Your Name" class="form-name">
+                        <input type="email" placeholder="Your Email" class="form-name">
+                        <input type="text" placeholder="Your Phone" class="form-name">
+                        <input type="text" placeholder="Write a Message" class="form-message">
+
+                        <button class="button-message">SEND MESSAGE</button>
+                    </form>
+
+                </div>
+                <div class="contact-me">
+                    <!-- <h2>Contact Me</h2> -->
+                    <p>
+                        Feel free to reach out via email or social media. I'm always open to discussing new projects,
+                        creative ideas, or
+                        opportunities to be part of your visions.
                     </p>
-        
-                    <div>
-                        <button class="button">
-                            <a
-                                href="mailto:toxlairene@gmail.com?subject=Job Opportunity&body=Hi, I came across your portfolio and would like to discuss a job opportunity.">
-                                Hire Me
-                            </a>
-                        </button>
-
-                        <a href="./assets/ireneToxla.resume - Irene Toxla.docx.pdf" download>
-                            <button class="press">DOWNLOAD CV</button> </a>
-                    </div>
-                </div>
-        
-            </div>
-        </section>
-
-        <section id="resume">
-            <div class="resume">
-
-                <h1 class="header">My Resume</h1>
-
-
-                <div class="resume-details">
-
-                    <div class="education-details">
-                        <h4 class="sub-title">Education</h4>
-
-                        <div class="education">
-                            <h5><i class="fa-regular fa-calendar-check"></i> September 2024 - November 2024</h5>
-                            <p class="text-color">Web Development Program</p>
-                            <p>MEST Training Pragram</p>
-                        </div>
-
-                        <div class="education">
-                            <h5><i class="fa-regular fa-calendar-check"></i> September 2018 - August 2022</h5>
-                            <p class="text-color">University Of Ghana</p>
-                            <p>Bsc.Biology</p>
-                        </div>
-
-                        <div class="education">
-                            <h5><i class="fa-regular fa-calendar-check"></i> September 2016 - July 2018</h5>
-                            <p class="text-color">St rose's Senior High School</p>
-                            <p>General Science</p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="education-details">
-                        <h4 class="sub-title">Experience</h4>
-
-                        <div class="education">
-                            <h5><i class="fa-regular fa-calendar-check"></i> November 2022 - October 2023</h5>
-                            <p class="text-color">CSIR Water Research Institute</p>
-                            <p>National Service</p>
-                        </div>
-
-                        <div class="education">
-                            <h5><i class="fa-regular fa-calendar-check"></i> October 2022 - November 2022</h5>
-                            <p class="text-color">Noguchi Memorial Institute for Medical Research</p>
-                            <p>Internship</p>
-                        </div>
-
-
-                        <div class="education">
-                            <h5><i class="fa-regular fa-calendar-check"></i> October 2022</h5>
-                            <p class="text-color">Solidage Africa Foundation, Health Screening</p>
-                            <p>volunteer work</p>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </section>
 
-        <section id="services" class="services-section">
-            <h2>Featured Services</h2>
-            <div class="services-container">
-                <div class="service-card">
-                    <i class="fas fa-server icon-blue" ></i>
-                    <h3>API Development</h3>
-                    <p>Design and build scalable, secure RESTful APIs for web applications.</p>
-                </div>
+        </footer>
 
-                <div class="service-card">
-                    <i class="fas fa-database"></i>
-                    <h3>Database Management</h3>
-                    <p>Create and manage efficient database schemas and optimize database performance.</p>
-                </div>
-
-                <div class="service-card">
-                    <i class="fas fa-cogs"></i>
-                    <h3>Server-Side Logic</h3>
-                    <p>Develop robust server-side logic to handle data processing and business rules.</p>
-                </div>
-
-                <div class="service-card">
-                    <i class="fas fa-lock"></i>
-                    <h3>User Authentication</h3>
-                    <p>Implement secure login systems, session management, and role-based access controls.</p>
-                </div>
+        <div class="socials">
+            <div class="Copy-right">
+                Copyright © 2024 All rights reserved | This template is made by Colorlib
             </div>
-        </section>
-       
-        <section id="contact">
-            <footer class="footer">
-                <h1 class="footer-header"></h1>
-                <div class="footer-body">
-                    <div class="footer-form">
-                        <h3>Get In Touch</h3>
+            <div class="social-brand">
 
-                        <form action="mailto:toxlairene@gmail.com" method="POST" enctype="text/plain">
-                            <input type="text" placeholder="Your Name" class="form-name">
-                            <input type="email" placeholder="Your Email" class="form-name">
-                            <input type="text" placeholder="Your Phone" class="form-name">
-                            <input type="text" placeholder="Write a Message" class="form-message">
+                <a href="https://github.com/esitoxla" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-github"></i>
+                </a>
 
-                            <button class="button-message">SEND MESSAGE</button>
-                        </form>
-                        
-                    </div>
-                    <div class ="contact-me">
-                        <!-- <h2>Contact Me</h2> -->
-                        <p>
-                            Feel free to reach out via email or social media. I'm always open to discussing new projects, creative ideas, or
-                            opportunities to be part of your visions.
-                        </p>
-                    </div>
-                </div>
-               
-            </footer>
+                <a href="https://wa.me/0206678495" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
 
-            <div class="socials">
-                <div class="Copy-right">
-                    Copyright © 2024 All rights reserved | This template is made by Colorlib
-                </div>
-                <div class="social-brand">
+                <a href="https://www.instagram.com/esi_toxla" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
 
-                    <a href="https://github.com/esitoxla" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-square-github"></i>
-                    </a>
-                   
-                    <a href="https://wa.me/0206678495" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                   
-                    <a href="https://www.instagram.com/esi_toxla" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                   
-                    <a href="https://www.linkedin.com/in/irene-toxla-40a634248" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                   
-                </div>
+                <a href="https://www.linkedin.com/in/irene-toxla-40a634248" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
             </div>
-        </section>
+        </div>
+    </section>
 
 </body>
 

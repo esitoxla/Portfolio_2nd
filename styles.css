@@ -28,18 +28,37 @@
 .nav-items {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  padding-top: 20px;
-  column-gap: 30px;
+  /* justify-content: center; */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
 }
 
 .menu-toggle {
   display: none; /* Hide the menu button on larger screens */
+  flex-direction: column;
+  gap: 5px;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
-.text {
-  color: black;
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color:midnightblue;
+}
+
+.nav-items li a {
+  color:black;
   text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-items li a:hover{
+  color:midnightblue ;
 }
 
      /* landing page */
@@ -402,7 +421,27 @@ form {
 }
 
 /* responsiveness for nav */
+  @media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* Show toggle button */
+  }
 
+  .nav-items {
+    display: none; /* Hide links initially */
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    flex-direction: column;
+    background:white;
+    padding: 20px;
+    border-radius: 5px;
+    gap: 10px;
+  }
+
+  .nav-items.active {
+    display: flex; /* Show links when active */
+  }
+}
 
   /* Responsive adjustments for landing page*/
 @media screen and (max-width: 768px) {
