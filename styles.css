@@ -138,7 +138,7 @@
 }
 
 .education {
-  width: 40vw;
+  width: 50vw;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
   row-gap: 70px;
@@ -427,7 +427,7 @@ form {
   }
 
   .nav-items {
-    display: none; /* Hide links initially */
+    display: flex; /* Hide links initially */
     position: absolute;
     top: 60px;
     right: 20px;
@@ -468,8 +468,9 @@ form {
 
   .about-me {
     width: 100%; /* Full width for better readability */
-    padding: 0; /* Remove right padding */
-    font-size: 18px; /* Adjust font size for smaller screens */
+    padding: 10px; /* Remove right padding */
+    font-size: 15px; /* Adjust font size for smaller screens */
+    text-align: left;
   }
 
   .button,
@@ -545,7 +546,7 @@ form {
 
   .education,
   .experience {
-    width: 90%; /* Full width for small screens */
+    width: 100%; /* Set a fixed width in pixels */
     font-size: 16px; /* Further adjust font size */
     padding: 20px; /* Reduce padding for readability */
   }
