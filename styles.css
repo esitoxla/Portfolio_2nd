@@ -283,6 +283,7 @@ form {
   border-style: none;
   border-radius: 5px;
   background-color: white;
+  padding: 10px;
 }
 
 .form-name {
@@ -294,7 +295,7 @@ form {
 
 .button-message {
   padding: 15px;
-  background-color: black;
+  background-color:midnightblue;
   color: white;
   border-radius: 20px;
   margin: 0 auto;
@@ -424,10 +425,11 @@ form {
   @media screen and (max-width: 768px) {
   .menu-toggle {
     display: flex; /* Show toggle button */
+    
   }
 
   .nav-items {
-    display: flex; /* Hide links initially */
+    display: none; /* Hide links initially */
     position: absolute;
     top: 60px;
     right: 20px;
@@ -436,10 +438,12 @@ form {
     padding: 20px;
     border-radius: 5px;
     gap: 10px;
+     z-index: 10;
   }
 
   .nav-items.active {
     display: flex; /* Show links when active */
+    background-color: white;
   }
 }
 
