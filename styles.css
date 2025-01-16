@@ -18,11 +18,11 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 1000;
   /* background-color: aqua; */
   height: 10%;
   width: 100vw;
-  background-color:white ;
+  background-color:white;
 }
 
 .nav-items {
@@ -38,6 +38,8 @@
 .menu-toggle {
   display: none; /* Hide the menu button on larger screens */
   flex-direction: column;
+  position: relative;
+  z-index: 11;
   gap: 5px;
   border: none;
   background: none;
@@ -94,6 +96,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 1;
+  margin-top: 10%;
   /* background-attachment: fixed; */
 }
 
@@ -425,6 +429,8 @@ form {
   @media screen and (max-width: 768px) {
   .menu-toggle {
     display: flex; /* Show toggle button */
+    position: relative;
+    z-index: 11;
     
   }
 
@@ -442,8 +448,8 @@ form {
   }
 
   .nav-items.active {
-    display: flex; /* Show links when active */
-    background-color: white;
+    display: block; /* Show links when active */
+    background-color: black;
   }
 }
 

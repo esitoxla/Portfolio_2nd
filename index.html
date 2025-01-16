@@ -10,6 +10,7 @@
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="./script.js" defer></script>
 </head>
 
@@ -22,7 +23,7 @@
         <span class="bar"></span>
         </button>
        
-        <ul class="nav-items active">
+        <ul class="nav-items">
             <li><a href="#home">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#resume">RESUME</a></li>
@@ -167,13 +168,12 @@
                 <div class="footer-form">
                     <h3>Get In Touch</h3>
 
-                    <form action="mailto:toxlairene@gmail.com" method="POST" enctype="text/plain">
-                        <input type="text" placeholder="Your Name" class="form-name">
-                        <input type="email" placeholder="Your Email" class="form-name">
-                        <input type="text" placeholder="Your Phone" class="form-name">
-                        <input type="text" placeholder="Write a Message" class="form-message">
-
-                        <button class="button-message">SEND MESSAGE</button>
+                    <form id="contact-form">
+                        <input type="text" name="from_name" placeholder="Your Name" class="form-name" required>
+                        <input type="email" name="reply_to" placeholder="Your Email" class="form-name" required>
+                        <input type="text" name="phone" placeholder="Your Phone" class="form-name">
+                        <textarea name="message" placeholder="Write a Message" class="form-message" required></textarea>
+                        <button class="button-message" type="submit">SEND MESSAGE</button>
                     </form>
 
                 </div>
