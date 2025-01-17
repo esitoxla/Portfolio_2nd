@@ -416,6 +416,87 @@ form {
   line-height: 1.6;
 }
 
+
+/* projects section */
+#projects {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Styling for Website */
+.website {
+ display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Styling for Each Project Card */
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Image */
+.project img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+/* View Project Link Button */
+.project a {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project:hover a {
+  opacity: 1;
+}
+
+.project a:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
 /* responsive design */
 
 @media (max-width: 768px) {
@@ -615,5 +696,25 @@ form {
 
   .contact-me {
     font-size: 0.9rem; /* Smaller text size for compact view */
+  }
+}
+
+
+/* responsive design for project section */
+@media (min-width: 768px) {
+  .website {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .website, .api {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: 90%;
+    height: 220px;
   }
 }
