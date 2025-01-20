@@ -1,13 +1,28 @@
 // menu-toggle.js
 const menuToggle = document.querySelector(".menu-toggle");
 const navItems = document.querySelector(".nav-items");
+const backgroundColor = document.querySelector(".nav-items");
 
 // Add click event to toggle the menu
 if (menuToggle && navItems) {
   menuToggle.addEventListener("click", () => {
     console.log("Menu toggle clicked"); // Debug log
     navItems.classList.toggle("active");
-    console.log(navItems.classList);
+    
+    //give background color
+    if (navItems.classList.contains("active")) {
+      navItems.style.backgroundColor = "blue"; // Set background color
+    } else {
+      navItems.style.backgroundColor = ""; // Reset background color when closed
+    }
+    
+    //give text color
+    if (navItems.classList.contains("active")) {
+      navItems.style.color = "white"; // Set text color
+    } else {
+      navItems.style.color = ""; // Reset text color when closed
+    }
+
   });
 } else {
   console.log("manu toggle or nav items not found");
