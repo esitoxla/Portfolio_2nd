@@ -1,31 +1,26 @@
 // menu-toggle.js
 const menuToggle = document.querySelector(".menu-toggle");
 const navItems = document.querySelector(".nav-items");
-const backgroundColor = document.querySelector(".nav-items");
+const closeBtn = document.querySelector(".close-btn");
 
 // Add click event to toggle the menu
 if (menuToggle && navItems) {
   menuToggle.addEventListener("click", () => {
     console.log("Menu toggle clicked"); // Debug log
     navItems.classList.toggle("active");
-    
-    //give background color
-    if (navItems.classList.contains("active")) {
-      navItems.style.backgroundColor = "blue"; // Set background color
-    } else {
-      navItems.style.backgroundColor = ""; // Reset background color when closed
-    }
-    
-    //give text color
-    if (navItems.classList.contains("active")) {
-      navItems.style.color = "white"; // Set text color
-    } else {
-      navItems.style.color = ""; // Reset text color when closed
-    }
-
   });
 } else {
   console.log("manu toggle or nav items not found");
+}
+
+// Add click event to the close button (close the menu)
+if (closeBtn) {
+  closeBtn.addEventListener("click", () => {
+    console.log("Close button clicked"); // Debug log
+    navItems.classList.remove("active"); // Remove active class to hide the menu
+  });
+} else {
+  console.log("Close button not found");
 }
 
 // emailjs-form-handler.js

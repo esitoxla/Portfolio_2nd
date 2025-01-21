@@ -30,18 +30,31 @@ html, body{
 }
 
 .nav-items {
-  display: flex;
-  flex-direction: row;
-  /* justify-content: center; */
+ display: flex;
+  flex-direction: column; /* Stack items vertically for mobile */
+  justify-content: center;
+  align-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
   gap: 20px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 70%; /* Adjust width as needed */
+  transform: translateX(100%); /* Initially hidden off-screen */
+  transition: transform 0.3s ease-in-out;
   z-index: 12;
 }
 
+.nav-items.active {
+  transform: translateX(0); /* Slide into view when active */
+}
+
 .menu-toggle {
-  display: none; /* Hide the menu button on larger screens */
+   display: flex; /* Show menu button on smaller screens */
   flex-direction: column;
   position: relative;
   z-index: 11;
@@ -58,7 +71,7 @@ html, body{
 }
 
 .nav-items li a {
-  color:black;
+  color:white;
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s;
@@ -66,6 +79,18 @@ html, body{
 
 .nav-items li a:hover{
   color:midnightblue ;
+}
+
+/* Close button styles */
+.nav-items .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  z-index: 13;
 }
 
      /* landing page */
@@ -527,21 +552,52 @@ form {
   }
 
   .nav-items {
-    display: none; /* Hide links initially */
-    position: absolute;
-    top: 60px;
-    right: 20px;
+    display: flex; /* Initially hidden off-screen */
     flex-direction: column;
-    color:white;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70%; /* Adjust width as needed */
+    transform: translateX(100%); /* Slide out of view initially */
+    transition: transform 0.3s ease-in-out;
+    background-color: midnightblue; /* Menu background color */
     padding: 20px;
-    border-radius: 5px;
-    gap: 10px;
-     z-index: 11;
+    gap: 20px;
+    z-index: 11;
+    border-radius: 0; /* Remove border-radius for full-screen effect */
+    color: white;
   }
 
-  .nav-items.active {
-    display: block; /* Show links when active */
-    background-color: black;
+ .nav-items.active {
+    transform: translateX(0); /* Slide into view */
+  }
+
+
+  /* Close button for the sliding menu */
+  .nav-items .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    z-index: 13;
+  }
+
+   /* Style for navigation links inside the menu */
+  .nav-items li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+
+   .nav-items li a:hover {
+    color: blue; /* Hover effect for links */
   }
 }
 
