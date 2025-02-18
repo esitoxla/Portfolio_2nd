@@ -810,3 +810,30 @@ form {
     padding: 8px 16px; /* Smaller button padding */
   }
 }
+
+/* featured services section */
+/* Tablet Screens */
+@media (max-width: 999px) {
+  .services-container {
+    grid-template-columns: 1fr; /* One card per row */
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 600px) {
+  .services-section h2 {
+    font-size: 2rem; /* Smaller heading */
+  }
+
+  .service-card {
+    padding: 15px; /* Reduced padding for mobile */
+  }
+
+  .service-card h3 {
+    font-size: 1.25rem; /* Adjusted title size */
+  }
+
+  .service-card p {
+    font-size: 0.95rem; /* Smaller paragraph size */
+  }
+}
